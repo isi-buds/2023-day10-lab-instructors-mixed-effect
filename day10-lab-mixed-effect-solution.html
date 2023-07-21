@@ -295,15 +295,18 @@ sd((Intercept)) 0.3699472 0.5127092 0.7105627
 </tr>
 <tr class="odd">
 <td>Continuous response variable with correlated data</td>
-<td>Liner Mixed Effect Model (LME)</td>
-<td><span class="math inline">\(E[Y_{ij}] = \beta_0 + \beta_1 X_{ij} + u_i\)</span></td>
-<td>Same as a in a linear model, but for the “typical” individual</td>
+<td>Linear mixed effect model (LME)</td>
+<td><span class="math display">\[
+Y_{ij} = \beta_0 + \beta_1 X_{ij} + u_i + \epsilon_{ij}
+\]</span></td>
+<td>Same as with a linear model but for a “typical individual”</td>
 </tr>
 <tr class="even">
 <td>Discrete response variable with correlated data</td>
-<td>Generalized Linear Mixed Effect Model (GLMM)</td>
-<td><span class="math inline">\(g(E[Y_{ij}]) = \beta_0 + \beta_1 X_{ij} + u_i\)</span></td>
-<td>Same as a in a generalized linear model, but for the “typical” individual</td>
+<td><p>Generalized linear mixed effect model (GLMM)</p>
+<p>(could be logistic, poisson, etc.)</p></td>
+<td>Depends on link function</td>
+<td>Same as with a glm but for a “typical individual”</td>
 </tr>
 </tbody>
 </table>
