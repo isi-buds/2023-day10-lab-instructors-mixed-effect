@@ -23,7 +23,7 @@ In this example we expect similar pCREB immunoreactivity wihtin a treatment grou
   \begin{split}
   &\text{pCREB immunoreactivity}_{ij} = \beta_0\\
   &+ \beta_1 I(\text{treatment group}_{ij} = 2) + \beta_2 I(\text{treatment group}_{ij} = 3)\\ 
-  &+ \beta_3 I(\text{treatment group}_{ij} = 4) + \beta_5 I(\text{treatment group}_{ij} = 5)\\
+  &+ \beta_3 I(\text{treatment group}_{ij} = 4) + \beta_4 I(\text{treatment group}_{ij} = 5)\\
   &+ u_i + \epsilon_{ij}
   \end{split}
 \end{equation} for $i = \text{mouse} = 1,...,24$ and $j = \text{neuron} = 1,...,n_i$ (not all mice have the same number of neurons measured).
@@ -36,7 +36,7 @@ Note when we take the expectation:
   \begin{split}
   &E[\text{pCREB immunoreactivity}_{ij}] = \beta_0\\
   &+ \beta_1 I(\text{treatment group}_{ij} = 2) + \beta_2 I(\text{treatment group}_{ij} = 3)\\ 
-  &+ \beta_3 I(\text{treatment group}_{ij} = 4) + \beta_5 I(\text{treatment group}_{ij} = 5)\\
+  &+ \beta_3 I(\text{treatment group}_{ij} = 4) + \beta_4 I(\text{treatment group}_{ij} = 5)\\
   &+ 0 + 0
   \end{split}
 \end{equation} for $i = 1,...,24$ and $j = 1,...,n_i$, since $E[u_{i}] = 0$ and $E[\epsilon_{ij}] = 0$ by assumption.
@@ -45,7 +45,7 @@ This means when we are interpreting it is with respect to the average mouse. So 
 
 Correct interpretation of the treatment time coefficients:
 
-The $\hat{\beta_k}$, $k = 2,...,5$, will estimate the change in average value of pCREB immunoreactivity, with respect to the baseline, for the typical mouse.
+The $\hat{\beta_k}$, $k =2,...,4$, will estimate the change in average value of pCREB immunoreactivity, with respect to the baseline, for the typical mouse.
 
 ### 1a
 
